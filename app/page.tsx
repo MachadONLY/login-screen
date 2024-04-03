@@ -1,13 +1,15 @@
 import Image from "next/image";
 import { Axe } from "lucide-react";
-import { Facebook } from 'lucide-react';
+import { FaGoogle } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
+import { ImFacebook2 } from "react-icons/im";
 
 export default function Home() {
   return (
     <>
       <div className="flex flex-col gap-2 p-6">
         <h1 className="flex items-center gap-4 font-semibold text-3xl mt-10 ml-4">
-          AXE <Axe className="text-sky-500 w-8 h-8" />
+          LOGIN SCREEN <Axe className="text-sky-500 w-8 h-8" />
         </h1>
         <h3 className="text-lg ml-4 mt-10">Login</h3>
         <h1 className="text-2xl ml-4">Bem-vindo de volta</h1>
@@ -33,15 +35,26 @@ export default function Home() {
           Login
         </button>
         <div className="flex items-center gap-x-4 justify-center mt-4">
-          <div className="border w-20 h-0.5"></div>
+          <div className="border w-20 h-0.5 border-gray-600"></div>
           <p className="text-lg">Ou</p>
-          <div className="border w-20 h-0.5"></div>
+          <div className="border w-20 h-0.5 border-gray-600"></div>
         </div>
+        <div className="flex flex-col items-center justify-center mt-6">
+          <div className="flex gap-2">
+            <div className="bg-slate-900 text-zinc-300 border border-gray-700 p-2 rounded-lg w-28 flex gap-2 items-center justify-center">
+              <FaGoogle />
+              Google
+            </div>
 
-        <div className="flex">
-          <div>
-            <Facebook />
-            Facebook
+            <div className="bg-slate-900 text-zinc-300 border border-gray-700 p-2 rounded-lg w-28 flex gap-2 items-center justify-center">
+              <ImFacebook2 />
+              Facebook
+            </div>
+          </div>
+
+          <div className="bg-slate-900 text-zinc-300 border border-gray-700 p-2 rounded-lg w-28 flex gap-2 items-center justify-center mt-4">
+            <FaApple />
+            Apple
           </div>
         </div>
       </div>
